@@ -1,0 +1,65 @@
+//coding-challenge-1
+
+const massMark= 78;
+const heighMark = 1.69;
+const massJoin= 92;
+const heighJoin = 1.95;
+
+const BMIMark =massMark/heighMark **2;
+const BMIJoin =massJoin/heighJoin **2;
+const BMI= BMIMark>BMIJoin;
+
+console.log(BMIMark,BMIJoin,BMI);
+
+//coding-challenge-2
+const massMark= 78;
+const heighMark = 1.69;
+const massJoin= 92;
+const heighJoin = 1.95;
+
+const BMIMark =massMark/heighMark **2;
+const BMIJoin =massJoin/heighJoin **2;
+const BMI= BMIMark>BMIJoin;
+
+
+if (BMIMark>BMIJoin) {
+    console.log(`BMI Mark ${BMIMark} lon hon BMI Join ${BMIJoin}`)
+} else {
+    console.log(`BMI Join ${BMIJoin} lon hon BMI Mark ${BMIMark} `)
+}
+
+
+//coding-challenge-3
+
+const Dophins= (96+108+89)/3;
+const Koalas=(88+91+110)/3;
+
+if(Dophins>Koalas){
+    console.log("Dophins giành được cup");
+}else if(Dophins<Koalas){
+    console.log("Koalas giành được cup");
+}else if(Dophins==Koalas){
+    console.log("Hai đội hào nhau");
+}
+
+
+const Dophins= (97+112+81)/3;
+const Koalas=(109+95+86)/3;
+
+if(Dophins>Koalas &&Dophins>=100){
+    console.log("Dophins giành được cup");
+}else if(Dophins <Koalas &&Koalas>=100){
+    console.log("Koalas giành được cup");
+}else if(Dophins==Koalas &&Dophins>=100 &&Koalas>=100  ){
+    console.log("Hai đội hào nhau");
+}else{
+    console.log("Hai đội không dành được cup");
+}
+
+
+//coding-challenge-4
+
+const bill=400;
+const tip=bill>=50&& bill <=300 ? bill*0.15: bill*0.2;
+
+console.log(`Hóa đơn là ${bill}, tiền tip là ${tip}, tổng hóa đơn là ${bill+tip}`);
